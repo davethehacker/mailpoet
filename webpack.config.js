@@ -282,6 +282,9 @@ const adminConfig = {
         },
       ],
     }),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
   ],
   optimization: {
     runtimeChunk: 'single',
