@@ -106,7 +106,7 @@ executors:
 jobs:
   build:
     executor: wpcli_php_latest
-    resource_class: medium
+    resource_class: medium+
     steps:
       - checkout
       - run:
